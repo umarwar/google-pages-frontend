@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Index File</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/2x/google-logo.png">
+        
+
+        <style>
+
+            body{
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                text-align: center;
+        
+            }
+            
+
+            @media only screen and (max-width:600px){
+                body{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+
+
+            p{
+                padding-top: 60px;
+                font-size: 90px; 
+                font-family: Arial;
+                letter-spacing: -14px;
+                font-weight:bolder; 
+                flex-wrap: wrap;
+               
+            }
+
+            input[type=text]{
+                position: absolute;
+                top: 300px;
+                left: 435px;
+                width: 500px;
+                height: 40px;
+                padding: 15px;
+                box-sizing: border-box;
+                border: 1px solid #dedede;
+                border-radius: 25px;
+                font-size: 17px;
+                font-family: arial;
+                display: flex;
+                flex-wrap: wrap;
+                color: black;
+                background-image: url('https://cdn.iconscout.com/icon/free/png-64/find-25-83545.png');
+                background-position: 1px 1px;
+                padding: 12px 20px 12px 50px;
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: 7px 7px;
+
+            }
+            input[type=submit]{
+                position:absolute;
+                top: 355px;
+                left: 580px;
+                height: 30px;
+                box-sizing: border-box;
+                border: 1px solid #dedede;
+                border-radius: 7px;
+                cursor: pointer;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: #dedede;
+                
+            }
+
+            input[type=submit]:hover{
+                background-color: darkgrey;
+            }
+
+            input[type=button] {
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+            text-decoration: none;
+            color: initial;
+            position:relative;
+            margin-left: 160px;
+            top: -18px;    
+            border: 1px solid #dedede;
+            border-radius: 7px;
+            height: 30px;
+            text-align: center;
+            width: 130px;
+            background-color: #dedede ;
+            box-sizing: border-box;
+            cursor: pointer;    
+            
+            }
+            input[type=button]:hover{
+                background-color: darkgray;
+            }
+
+            div{
+                text-align: right; 
+                font-size: 20px;
+                font-weight: bold;
+                word-spacing: 5px;
+                letter-spacing: -1px;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+
+        <div>
+           <a href="image.html" style="color:black ; text-decoration: none;">Image Search</a>&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="advanced.html" style="color:black ;text-decoration: none;">Advanced Search</a>
+        </div>
+        
+
+
+        <center>
+        <p> <span style="color: #4285F4">G</span>
+            <span style="color: #EA4335">o</span>
+            <span style="color: #FBBC05">o</span>
+            <span style="color: #4285F4">g</span>
+            <span style="color: #34A853">l</span>
+            <span style="color: #EA4335">e</span></p>
+
+        <form action="https://www.google.com.pk/search">
+            
+            <input type="text" name="q" placeholder="  Search Google or type a URL"  required>
+            <input type="submit" value="Google Search">
+            <input type="button" onclick="window.location.href='https://www.google.com.pk/search?q=harvard+'" value="I'm Feeling Lucky">
+            
+        </form>
+    </center>
+    </body>
+</html>
+
